@@ -1,0 +1,18 @@
+Release 0.1.2 (2018-12-07)
+==========================
+
+- Fixed fullScale value for getNativeStreamFormat() call
+- Apply optional arguments to settings on setting key match
+- Added optional stream bitpacking with "bitpack" setting
+
+Release 0.1.1 (2017-04-29)
+==========================
+
+- Support native AIRSPY_SAMPLE_INT16_IQ format
+- Use atomics for ring buffer implementation
+- Use Format string constants for stream types
+
+Release 0.1.0 (2016-09-01)
+==========================
+
+- Initial release of Soapy Airspy support module

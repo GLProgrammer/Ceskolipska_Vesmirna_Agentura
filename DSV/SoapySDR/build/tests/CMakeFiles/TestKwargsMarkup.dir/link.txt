@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/TestKwargsMarkup.dir/TestKwargsMarkup.cpp.o  -o TestKwargsMarkup  -Wl,-rpath,/home/lubuntu/DSV/SoapySDR/build/lib ../lib/libSoapySDR.so.0.8.0 -pthread 

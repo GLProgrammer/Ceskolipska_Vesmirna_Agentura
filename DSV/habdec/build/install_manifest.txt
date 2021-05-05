@@ -1,0 +1,4 @@
+/home/honza/Downloads/habdec/build/install/habdecWebsocketServer
+/home/honza/Downloads/habdec/build/install/habLogger.py
+/home/honza/Downloads/habdec/build/install/fileLogger.sh
+/home/honza/Downloads/habdec/build/install/run_loop.sh

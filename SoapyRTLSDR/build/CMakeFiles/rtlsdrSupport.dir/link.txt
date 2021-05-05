@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -O3 -DNDEBUG  -shared  -o librtlsdrSupport.so CMakeFiles/rtlsdrSupport.dir/Registration.cpp.o CMakeFiles/rtlsdrSupport.dir/Settings.cpp.o CMakeFiles/rtlsdrSupport.dir/Streaming.cpp.o CMakeFiles/rtlsdrSupport.dir/Version.cpp.o  -Wl,-rpath,/usr/local/lib: -lrtlsdr -pthread /usr/local/lib/libSoapySDR.so.0.8.0 -Wl,--no-undefined -pthread 

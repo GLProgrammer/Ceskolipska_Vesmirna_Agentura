@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# extract the last section of the changelog version for extra info
+DEB_VERSION ?= $(shell dpkg-parsechangelog -S Version)
+DEB_VERSION_EXTRA := $(lastword $(subst -, ,$(DEB_VERSION)))
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DCMAKE_AUTOSET_INSTALL_RPATH=FALSE \
+		-DSOAPY_SDR_EXTVER="$(DEB_VERSION_EXTRA)"
+
+override_dh_installchangelogs:
+	dh_installchangelogs Changelog.txt

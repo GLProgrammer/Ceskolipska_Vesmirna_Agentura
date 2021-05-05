@@ -1,0 +1,7 @@
+/home/lubuntu/SoapyRTLSDR/build/CMakeFiles/install/local.dir
+/home/lubuntu/SoapyRTLSDR/build/CMakeFiles/install.dir
+/home/lubuntu/SoapyRTLSDR/build/CMakeFiles/list_install_components.dir
+/home/lubuntu/SoapyRTLSDR/build/CMakeFiles/rebuild_cache.dir
+/home/lubuntu/SoapyRTLSDR/build/CMakeFiles/edit_cache.dir
+/home/lubuntu/SoapyRTLSDR/build/CMakeFiles/install/strip.dir
+/home/lubuntu/SoapyRTLSDR/build/CMakeFiles/rtlsdrSupport.dir

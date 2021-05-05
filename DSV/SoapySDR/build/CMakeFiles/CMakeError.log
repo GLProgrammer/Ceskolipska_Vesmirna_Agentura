@@ -1,0 +1,112 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Performing C++ SOURCE FILE Test SIZE_T_IS_UNSIGNED_INT failed with the following output:
+Change Dir: /home/lubuntu/DSV/SoapySDR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fbd81/fast && /usr/bin/make -f CMakeFiles/cmTC_fbd81.dir/build.make CMakeFiles/cmTC_fbd81.dir/build
+make[1]: Entering directory '/home/lubuntu/DSV/SoapySDR/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fbd81.dir/src.cxx.o
+/usr/bin/c++    -DSIZE_T_IS_UNSIGNED_INT   -o CMakeFiles/cmTC_fbd81.dir/src.cxx.o -c /home/lubuntu/DSV/SoapySDR/build/CMakeFiles/CMakeTmp/src.cxx
+/home/lubuntu/DSV/SoapySDR/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/lubuntu/DSV/SoapySDR/build/CMakeFiles/CMakeTmp/src.cxx:4:38: error: cannot convert ‘unsigned int*’ to ‘size_t*’ {aka ‘long unsigned int*’} in initialization
+    4 |     size_t *x = (unsigned int *)(NULL);
+      |                                      ^
+make[1]: *** [CMakeFiles/cmTC_fbd81.dir/build.make:66: CMakeFiles/cmTC_fbd81.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/lubuntu/DSV/SoapySDR/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fbd81/fast] Error 2
+
+
+Source file was:
+
+    #include <cstddef>
+    int main() {
+    size_t *x = (unsigned int *)(NULL);
+    return 0; }

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/TestFormatParser.dir/TestFormatParser.cpp.o  -o TestFormatParser  -Wl,-rpath,/home/lubuntu/DSV/SoapySDR/build/lib ../lib/libSoapySDR.so.0.8.0 -pthread 

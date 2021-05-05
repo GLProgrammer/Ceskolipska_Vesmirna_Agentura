@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -O3 -DNDEBUG  -shared  -o libairspySupport.so CMakeFiles/airspySupport.dir/Registration.cpp.o CMakeFiles/airspySupport.dir/Settings.cpp.o CMakeFiles/airspySupport.dir/Streaming.cpp.o CMakeFiles/airspySupport.dir/Version.cpp.o  -Wl,-rpath,/usr/local/lib: -pthread -lairspy /usr/local/lib/libSoapySDR.so.0.8.0 -Wl,--no-undefined -pthread 

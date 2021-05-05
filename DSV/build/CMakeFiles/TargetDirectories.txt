@@ -1,0 +1,7 @@
+/home/lubuntu/DSV/build/CMakeFiles/install/strip.dir
+/home/lubuntu/DSV/build/CMakeFiles/install/local.dir
+/home/lubuntu/DSV/build/CMakeFiles/edit_cache.dir
+/home/lubuntu/DSV/build/CMakeFiles/install.dir
+/home/lubuntu/DSV/build/CMakeFiles/list_install_components.dir
+/home/lubuntu/DSV/build/CMakeFiles/rebuild_cache.dir
+/home/lubuntu/DSV/build/CMakeFiles/airspySupport.dir

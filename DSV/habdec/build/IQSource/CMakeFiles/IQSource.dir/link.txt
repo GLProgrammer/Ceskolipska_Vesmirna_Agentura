@@ -1,0 +1,2 @@
+/usr/bin/ar qc libIQSource.a  CMakeFiles/IQSource.dir/IQSource_SoapySDR.cpp.o
+/usr/bin/ranlib libIQSource.a

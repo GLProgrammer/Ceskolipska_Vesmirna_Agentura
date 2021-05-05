@@ -1,0 +1,2 @@
+/usr/bin/ar qc libssdv_lib.a  CMakeFiles/ssdv_lib.dir/__/ssdv/rs8.c.o CMakeFiles/ssdv_lib.dir/__/ssdv/ssdv.c.o
+/usr/bin/ranlib libssdv_lib.a

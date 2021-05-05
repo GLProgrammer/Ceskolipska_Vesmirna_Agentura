@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/TestConvertTypes.dir/TestConvertTypes.cpp.o  -o TestConvertTypes  -Wl,-rpath,/home/lubuntu/DSV/SoapySDR/build/lib ../lib/libSoapySDR.so.0.8.0 -pthread 

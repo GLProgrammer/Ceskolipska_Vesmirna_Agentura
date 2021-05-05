@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDecoder.a  CMakeFiles/Decoder.dir/__/common/console_colors.cpp.o CMakeFiles/Decoder.dir/CRC.cpp.o CMakeFiles/Decoder.dir/FFT.cpp.o CMakeFiles/Decoder.dir/print_habhub_sentence.cpp.o CMakeFiles/Decoder.dir/sentence_extract.cpp.o CMakeFiles/Decoder.dir/ssdv_wrapper.cpp.o
+/usr/bin/ranlib libDecoder.a

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+
+<script src="js/NetTransport.js"></script>
+<script src="js/habdec_commands.js"></script>
+<script src="js/drawing.js"></script>
+<script src="js/gui.js"></script>
+<script src="js/color_schemes.js"></script>
+
+<head>
+	<title>Dotkni se vesmíru – přijímač</title>
+	<style>
+		body,
+		html {
+			height: 100%;
+			width: 100%;
+		}
+
+		div {
+			font-family: Tahoma, Verdana, Segoe, sans-serif;
+		}
+	</style>
+
+	<link rel="stylesheet" href="css/habdec.css">
+</head>
+
+<body>
+	<div id="HABDEC_UI_DIV"> </div>
+</body>
+
+
+<script language="javascript" type="text/javascript">
+	window.addEventListener("load", () => { habdec_init("HABDEC_UI_DIV", "192.168.88.249:5555") }, false);
+</script>

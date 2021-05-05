@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/honza/Downloads/habdec/code/ssdv/rs8.c
+string.h
+-
+rs8.h
+/home/honza/Downloads/habdec/code/ssdv/rs8.h
+
+/home/honza/Downloads/habdec/code/ssdv/rs8.h
+stdint.h
+-
+
+/home/honza/Downloads/habdec/code/ssdv/ssdv.c
+stdio.h
+-
+stdint.h
+-
+string.h
+-
+ssdv.h
+/home/honza/Downloads/habdec/code/ssdv/ssdv.h
+rs8.h
+/home/honza/Downloads/habdec/code/ssdv/rs8.h
+
+/home/honza/Downloads/habdec/code/ssdv/ssdv.h
+stdint.h
+-
+

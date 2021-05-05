@@ -1,0 +1,245 @@
+This this the changelog file for the SoapySDR project.
+
+Release 0.8.0 (pending)
+==========================
+
+Build:
+- Update to CMake 3.0 style and project config generation
+- Increase the CMake build requirement to version 3.1.0
+
+API:
+- Added API calls for configuring an external reference clock rate
+- Constants for boolean setting strings SOAPY_SDR_TRUE/FALSE
+- Templated read/writeSetting()/readSensor() for SoapySDR::Device
+- Added Templated StringToSetting() and SettingToString() helpers
+- Python bindings duck typing for read/writeSetting()/readSensor()
+- Changed SoapySDRDevice_setupStream() to return the stream pointer
+- Added unloadModules() API call to manually cleanup modules on exit
+
+Release 0.7.2 (2020-01-12)
+==========================
+
+- Remove --no-undefined linker flag for python 3.8
+- Fixed C bindings for parallel make and unmake
+  - pointer for argument inputs should be const
+  - wrong name for functions in FactoryC.cpp
+
+Release 0.7.1 (2019-01-26)
+==========================
+
+- Fix for C API call SoapySDRDevice_setIQBalance()
+- Default logger can be restored by setting NULL handler
+  - Bumped API version to 0.7.1 for the NULL log handler option
+- Add missing registerLogHandler() to python bindings
+- Move visibility flags from project config to library scope
+
+Release 0.7.0 (2018-10-24)
+==========================
+
+- Support parallel device factory construction/destruction
+- Added error handling and return code to SoapySDRKwargs_set()
+- Support list of module files in the search path
+- Disable automatic module load when loadModule is used first
+- Added --sparse print option to command line SoapySDRUtil
+- Version reporting API and build support for loadable modules
+- Added converter registry API for converting between sample types
+
+Python build changes:
+
+- Better support python subdirectory as a stand-alone project
+- Turn on USE_PYTHON_CONFIG by default to use python-config
+
+Release 0.6.1 (2017-12-12)
+==========================
+
+- Handle null pointer in SoapySDRDevice_makeStrArgs()
+- Added read stream status to rate testing application
+- Fixed units for average byte rate in stream rate testing utility
+- Separate ENABLE_PYTHON and ENABLE_PYTHON3 options for python support
+- Moved cmake modules into subdirectory to hide them from cmake's
+  default project search path when cloned in user's home directory
+
+Release 0.6.0 (2017-04-29)
+==========================
+
+Device C API changes:
+
+- Device readI2C - make numBytes an in/out argument
+- Device read/write registers switch to named variant
+- Status return for Device C API calls with void return
+
+General additions and changes:
+
+- Added frequency corrections API for fine adjustments
+- Added getSampleRateRange() API for continuous ranges
+- Device factory table keys based on enumeration results
+- Added optional step size to the range type
+- Added rate testing to SoapySDRUtil application
+- Added listSearchPaths() API and SoapySDRUtil print
+- Added Kwargs type to/from markup string API calls
+- Added read/writeRegisters() API for bulk register IO
+
+Release 0.5.5 (2017-04-28)
+==========================
+
+- Added logger API and constants to python SWIG bindings
+- Added missing time utils to the swig python support
+- Fixed missing INFO log level for SOAPY_SDR_LOG_LEVEL
+- Fix for cache overwrite of PYTHON_INSTALL_DIR variable
+
+Release 0.5.4 (2016-11-29)
+==========================
+
+- Added man page for SoapySDRUtil executable
+- Dynamic root environment variable to support snappy packages
+- Windows: disable graphical error pop-ups when DLLs are not found
+- Debian: replaced recommends with soapysdr-modules-all metapackage
+
+Release 0.5.3 (2016-09-01)
+==========================
+
+- Additional try/catch blocks for C API wrapper safety
+
+Release 0.5.2 (2016-08-18)
+==========================
+
+- Fixes for Doxygen warnings and Doxyfile version upgrade
+- Additional build helpers for python development config
+
+Release 0.5.1 (2016-08-02)
+==========================
+
+- Added SoapySDR_getLibVersion() and SOAPY_SDR_API_VERSION
+- debian allow any swig >= 2.0.0 using the swig meta-package
+- Only use stderr in the default logger for command line tools
+- ABI-specific modules directory for multi-version install
+
+Release 0.5.0 (2016-07-10)
+==========================
+
+Deprecated Device API calls:
+
+- Deprecated setCommandTime, use setHardwareTime
+- Deprecated listBandwidths, use getBandwidthRange
+- Deprecated unnamed read/writeRegister, use named
+
+General additions and changes:
+
+- Created wait trigger flag for trigger-based streaming
+- Added device factory lock to the python enumerate wrapper
+- Added named register API for multiple register interfaces
+- Added channel info API call for channel-specific info
+- Setup CMake rpath handling to be enabled by default
+- Moved time source calls to time API section
+- C bindings return status code and stash the error message
+- Added getBandwidthRange() API call for continuous ranges
+- Use current DLL path to determine the system install root
+- Implemented channel-specific settings API
+
+Release 0.4.4 (2016-07-10)
+==========================
+
+- Add known python version 3.5 to FindPython3Libs.cmake
+- Fix FindPython3Libs.cmake use of python3-config --includes
+
+Release 0.4.3 (2016-04-21)
+==========================
+
+- CMake SOAPY_SDR_SOVER variable cache fix use INTERNAL type
+- Added missing memset for internal use of SoapySDRKwargs type
+- Fix SoapySDRDevice declarations for use in a C only compiler
+
+Release 0.4.2 (2016-03-02)
+==========================
+
+- Fixes for SOAPY_SDR_MODULE_UTIL destination and install prefix
+- CMake override for PYTHON_INSTALL_DIR and PYTHON3_INSTALL_DIR
+
+Release 0.4.1 (2016-01-27)
+==========================
+
+- Added readStreamStatus() to python bindings
+- Notes on stream timeouts for client code compatibility
+- Fix debian upstream changelog and license install
+- Added official modules to debian Recommends
+
+Release 0.4.0 (2015-12-10)
+==========================
+
+- Added check for driver present to util app
+- Workaround for multiple null module load
+- Added defines for common stream formats
+- Support dual build of python2 and python3
+- Improved module loader API and results query
+- New query information for SoapySDRUtil --probe
+- Added setLogLevel() and default log threshold
+- Added API to query native stream format
+- Added C++ typedef for list of Kwargs
+- Added API to query tune argument info
+- Added API to query sensors meta info
+- Added API to query setting argument info
+- Added API to query stream argument info
+- CMAKE_BUILD_TYPE automatically defaults to Release
+- Added API to query AGC mode availability
+- Added API to query available clock rates
+- Set library SOVERSION using SOAPY_SDR_ABI_VERSION
+
+Release 0.3.1 (2015-10-11)
+==========================
+
+- Fixed missing python bindings for Errors.hpp
+- Added -DSOAPY_SDR_ROOT=<path> option to build
+
+Release 0.3.0 (2015-10-10)
+==========================
+
+- Util --probe option for detailed info summary
+- Added corrections API to check for availability
+- Added API to convert error codes to string
+- Added per-channel API to query readback sensors
+- Added GPIO API data direction modification mask
+- Removed SoapyUHD and SoapyOsmo submodules
+
+Release 0.2.3 (2015-10-08)
+==========================
+
+- Append to linker flags to avoid overwriting them
+- Link with -flat_namespace for OSX application bundle
+- GCC link with -pthread for threaded client support
+
+Release 0.2.2 (2015-08-15)
+==========================
+
+- Fixed vector<double> in python swig bindings
+- Support CMake 2.8.7 builds (ubuntu 12.04 lts)
+
+Release 0.2.1 (2015-07-09)
+==========================
+
+- Fixed Device::make() factory argument forwarding
+- Added Time.h/Time.hpp time conversion API calls
+- Implement SoapySDRConfigVersion.cmake version check
+
+Release 0.2.0 (2015-06-15)
+==========================
+
+- Support /usr/local module installs when root is /usr
+- Support SOAPY_SDR_PLUGIN_PATH environment variable
+- Added logger support for stream status indicator
+- Frequency component API and tune distribution algorithm
+- Added direct buffer access API for read and write streams
+- Automatic gain distribution and overall range calculations
+- Added read stream status Device API call
+- Added additional error codes and status flags
+
+Release 0.1.1 (2015-06-14)
+==========================
+
+- Fix path issues for listModules() implementation under MSVC
+- Support openSuSE for automatic LIB_SUFFIX detection logic
+- patch for missing add_compile_options in older CMake
+
+Release 0.1.0 (2015-01-31)
+==========================
+
+This is the first public release of the SoapySDR project.

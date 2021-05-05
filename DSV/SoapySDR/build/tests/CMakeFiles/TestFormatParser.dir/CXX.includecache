@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SoapySDR/Config.h
+iso646.h
+-
+stdbool.h
+-
+
+../include/SoapySDR/Formats.h
+SoapySDR/Config.h
+-
+stddef.h
+-
+
+../include/SoapySDR/Formats.hpp
+SoapySDR/Config.h
+-
+SoapySDR/Formats.h
+-
+string
+-
+cstddef
+-
+
+/home/lubuntu/DSV/SoapySDR/tests/TestFormatParser.cpp
+SoapySDR/Formats.hpp
+-
+cstdlib
+-
+cstdio
+-
+

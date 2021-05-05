@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG   CMakeFiles/ssdv.dir/__/ssdv/rs8.c.o CMakeFiles/ssdv.dir/__/ssdv/ssdv.c.o CMakeFiles/ssdv.dir/__/ssdv/main.c.o  -o ssdv 
