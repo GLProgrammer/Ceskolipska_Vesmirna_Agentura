@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for Českolipská Vesmírná Agentura",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Českolipská",
+    "DotkniSeVesmíru",
+    "TouchTheSpace",
+    "GYCL"
+  ],
+  "author": "Jiří \"GLProgrammer\" Dlouhý",
+  "license": "MIT"
+}
