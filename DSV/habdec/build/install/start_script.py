@@ -10,7 +10,7 @@ import webbrowser
 
 config_name = "config"
 is_server_running = False
-
+server_process = ...
 # Load config file
 if os.path.exists(config_name):
     with open(config_name, 'r', encoding='utf-8') as config:
@@ -23,7 +23,7 @@ else:
     name = "TTS19RX1"
     latitude = "50.10370678357754"
     longitude = "14.676310314707672"
-    frequency = "436.690"
+    frequency = "434.690"
     gain = "5"
 
 print("From config:")
@@ -65,14 +65,12 @@ def start_button_handler():
         is_server_running = True
         start_button_text.set("Restart")
 
-    habdecPath = os.path.abspath(
-        "DSV/habdec/build/install/habdecWebsocketServer.exe").replace("\\", "/")
-    server_process = subprocess.Popen([habdecPath, "--device", "3", "--sampling_rate", "2.024e6", "--rtty", "300", "7", "2",
+    path = os.path.abspath("DSV/habdec/build/install/habdecWebsocketServer").replace("\\", "/")
+    print(path)
+    server_process = subprocess.Popen([path, "--device", "0", "--sampling_rate", "2.024e6", "--rtty", "300", "7", "2",
                                        "-print", "1", "--freq", frequency, "--gain", gain, "--biast", "0", "--afc", "0", "--station", name, "--latlon", latitude, longitude])
 
 # Open web browser
-
-
 def browser_button_handler():
     url = "file://" + \
         os.path.abspath(

@@ -5,7 +5,7 @@
       "name": "Python: Current File",
       "type": "python",
       "request": "launch",
-      "program": "DSV\\habdec\\build\\install\\start_script.py",
+      "program": "DSV/habdec/build/install/start_script.py",
       "console": "integratedTerminal"
     }
   ]
